@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <hr>
+ <h3><title>ENQUIRIES</title>
+  <hr>
+ <link rel="stylesheet" type ="text/css" href="style.css*">
+</head>
+<script>
+function enq(){
+var ×1=document.getElementById('text1').value;
+var ×2=document.getElementById('text2').value;
+var ×3=document.getElementById('text3').value;
+var ×4=document.getElementById('text4').value;
+
+ alert("Name: "+×1+ "\nNumber"+×2+ "\nEmail: "+×3+ "\nEnquiry: "+×4);
+
+}
+</script>
+<body>
+    <form>
+        <label>Name: </label><input type="text" id="text1" ><br>
+        <label>Number: </label><input type="number" id="text2"><br>
+        <label>Email: </label><input type="mail" id="text3" ><br>
+        <label>Enquiry: </label><input type="memo" id="text4"><br>
+        <form method="POST" action="new.cgi" onsubmit="return validate()">
+   …
+   <input type="submit" value="Submit" onclick="enq()" /><br>
+</form>
+        <input type="reset" />
+        
+
+    </form>
+
+</body>
+
+</html>
