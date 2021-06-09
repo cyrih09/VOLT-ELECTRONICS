@@ -9,13 +9,12 @@
 </head><h2>ENQUIRIES</h2>
 <script>
 function enq(){
-var ×1=document.getElementById('text1').value;
-var ×2=document.getElementById('text2').value;
-var ×3=document.getElementById('text3').value;
-var ×4=document.getElementById('text4').value;
+var nam=document.getElementById('text1').value;
+var num=document.getElementById('text2').value;
+var ema=document.getElementById('text3').value;
+var enq=document.getElementById('text4').value;
 
- alert( "Enquiry Successful" + "\nName: "+×1+ "\nNumber"+×2+ "\nEmail: "+×3+ "\nEnquiry: "+×4);
-
+ alert( "Enquiry Successful" + "\nName: "+nam+ "\nNumber"+num+ "\nEmail: "+ema+ "\nEnquiry: "+enq);
 
 }
 </script>
@@ -26,7 +25,7 @@ var ×4=document.getElementById('text4').value;
         <td><label>Name: </label></td><td><input type="text" id="text1" ><br></td></tr><tr>
         <td><label>Number: </label></td><td><input type="number" id="text2"><br></td></tr><tr>
         <td><label>Email: </label></td><td><input type="mail" id="text3" ><br></td></tr><tr>
-        <td><label>Enquiry: </label></td><td><textarea name="enquiry" id="text4"></textarea><br></td></tr>
+        <td><label>Enquiry: </label></td><td><textarea name="text" id="text4"></textarea><br></td></tr>
             <tr>
                 <td colspan="2" style="text=align:center">
    <input type="submit" value="Submit" onclick="enq()">
